@@ -64,6 +64,8 @@ savef_and_close('M(s) M_k(s).png')
 plot_xx(M,n,"$n(M)$",M_k,n,"$n(M_k)$","$M,H$","n об/мин")
 savef_and_close('n(M),n(M_k).png')
 
+I_2s = U_1N./sqrt((r_1 + r_2s./s).^2 + (x_s1 + x_s2s)^2);
+I_2sk =  U_1N./sqrt((r_1 + r_2s.*k_r./s).^2 + (x_s1 + x_s2s.*k_x).^2);
 plot_xx(s,I_2s,"$I'_{2}(s)$",s,I_2sk,"$I'_{2k}(s)$","$s$","$I,A$")
 savef_and_close('I_2s(s) I_2sk(s).png')
 
