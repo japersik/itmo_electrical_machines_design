@@ -95,7 +95,7 @@ R2 = Lw2 *p_2*w_2
 % Потери в меди 
 Pcu = R1*I_1n*I_1n+R2*I_2n*I_2n
 % p,q: 
-s = get_q_B(B_a)
+q_a = get_q_B(B_a)
 q_d = get_q_B(B_d)
 q_e = get_q_B(B_e)
 p_a = get_p_B(B_a)
